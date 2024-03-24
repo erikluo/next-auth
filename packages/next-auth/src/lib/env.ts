@@ -2,6 +2,8 @@ import { NextRequest } from "next/server"
 import type { NextAuthConfig } from "./index.js"
 import { setEnvDefaults as coreSetEnvDefaults } from "@auth/core"
 
+//erikluo:  here is important
+//erikluo: https://github.com/nextauthjs/next-auth/issues/9922
 /** If `NEXTAUTH_URL` or `AUTH_URL` is defined, override the request's URL. */
 export function reqWithEnvURL(req: NextRequest): NextRequest {
   const url = process.env.AUTH_URL ?? process.env.NEXTAUTH_URL

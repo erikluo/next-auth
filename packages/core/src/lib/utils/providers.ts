@@ -15,6 +15,7 @@ import type { AuthConfig, InternalProvider, Profile } from "../../types.js"
  * Adds `signinUrl` and `callbackUrl` to each provider
  * and deep merge user-defined options.
  */
+// erikluo provider 添加signinUrl参数
 export default function parseProviders(params: {
   providers: Provider[]
   url: URL

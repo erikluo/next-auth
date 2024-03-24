@@ -7,6 +7,8 @@ import { validateCSRF } from "./actions/callback/oauth/csrf-token.js"
 
 import type { AuthConfig, RequestInternal, ResponseInternal } from "../types.js"
 
+
+// erikluo call init pass url
 /** @internal */
 export async function AuthInternal(
   request: RequestInternal,

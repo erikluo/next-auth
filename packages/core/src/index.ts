@@ -65,6 +65,7 @@ import { isAuthAction } from "./lib/utils/actions.js"
 
 export { skipCSRFCheck, raw, setEnvDefaults, createActionURL, isAuthAction }
 
+// erikluo - I think this is the main entry point for the Auth.js library
 export async function Auth(
   request: Request,
   config: AuthConfig & { raw: typeof raw }
@@ -439,7 +440,7 @@ export interface AuthConfig {
   /**
    * The base path of the Auth.js API endpoints.
    *
-   * @default "/auth"
+   * @default "/api/auth" in "next-auth"; "/auth" with all other frameworks
    */
   basePath?: string
 }
